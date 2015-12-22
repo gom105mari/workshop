@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    
     <meta name="description" content=""/>
-
     <title>Workshop</title>
 	
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 
-<body style="background-color:#0099FF">
+<body>
   <header>
   </header>
 
@@ -18,32 +22,39 @@
     <header>
     </header>
     <section>
-    	<div class="container">
-	    	<div id="div_up_team" class="row">
-	    		<!--<div class="col-xs-4" style="background-color:lavender;">
-	  			</div>-->
-	    	</div>
-	    	
-		    <div id="div_mainmsg" class="container text-danger text-center">
-		    	<p>How many teams?</p>
-		    </div>
-		    
-		    <div id="div_input" class="container text-danger text-center col-xs-3">
-		    	<input type="text" class="form-control" id="input_team_no">
-		    </div>
-		    
-		    <div id="div_content" class="row">
-	    		<!--<div id="content1" class="col-xs-3 col-sm-3">
-	      			<p>                                                                                                           </p>
-	    		</div>-->		    	
-	  		</div>
-	  		
-	  		<div id="div_bottom_team" class="row">
-	  			<!--<div class="col-xs-4" style="background-color:lavender;">
-	  			</div>-->
-	    	</div>
+    	<div id="div-main-msg" class="container-fluid" style="background-color:#3399FF">
+    		<div class="spacer30"></div>
+   			<div class="row">
+  				<div class="col-xs-12">
+					<h1>Welcome</h1>    				
+  				</div>
+			</div>
+    	</div>
+    	<div id="div-sub-msg" class="container-fluid">
+    		<div class="row">
+    			<div class="col-xs-12">
+    			</div>
+   			</div>
+    	</div>
+    	<div class="spacer30"></div>
+    	<div id="div-main-user" class="container-fluid">
+    		<div class="row">
+				<div class="col-xs-12">
+  					<input id="exampleInputEmail2" class="form-control" type="number" min="2" max="4" placeholder="How many teams play?(2-4)">
+  				</div>
+			</div>
+			<div class="row">
+				<div class="spacer30"></div>
+				<div class="col-xs-2 col-xs-offset-8">
+  					<button type="button" class="btn btn-warning" disabled>Prev</button>
+  				</div>
+  				<div class="col-xs-2">
+  					<button type="button" class="btn btn-info" disabled>Next</button>
+  				</div>
+			</div>
     	</div>
     </section>
   </article>
 </body>
 </html>
+
