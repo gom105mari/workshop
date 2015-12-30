@@ -8,10 +8,15 @@
     <meta name="description" content=""/>
     <title>Workshop</title>
 	
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/constants.js"></script>
+    <script src="js/creator.js"></script>
+    <script src="js/pages.js"></script>
+    
 </head>
 
 <body>
@@ -25,8 +30,7 @@
     	<div id="div-main-msg" class="container-fluid" style="background-color:#3399FF">
     		<div class="spacer30"></div>
    			<div class="row">
-  				<div class="col-xs-12">
-					<h1>Welcome</h1>    				
+  				<div id="main-msg" class="col-xs-12">
   				</div>
 			</div>
     	</div>
@@ -39,17 +43,16 @@
     	<div class="spacer30"></div>
     	<div id="div-main-user" class="container-fluid">
     		<div class="row">
-				<div class="col-xs-12">
-  					<input id="exampleInputEmail2" class="form-control" type="number" min="2" max="4" placeholder="How many teams play?(2-4)">
+				<div id="main-input" class="col-xs-12">
   				</div>
 			</div>
 			<div class="row">
 				<div class="spacer30"></div>
 				<div class="col-xs-2 col-xs-offset-8">
-  					<button type="button" class="btn btn-warning" disabled>Prev</button>
+  					<button id="btn-prev" type="button" class="btn btn-warning" onclick="createPage(-1)">Prev</button>
   				</div>
   				<div class="col-xs-2">
-  					<button type="button" class="btn btn-info" disabled>Next</button>
+  					<button id="btn-next" type="button" class="btn btn-info" onclick="createPage(1)">Next</button>
   				</div>
 			</div>
     	</div>
